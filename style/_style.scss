@@ -1,0 +1,595 @@
+$primary-color: #001524;
+body {
+  main {
+    .calculatorp {
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+      .calculator {
+        width: 300px;
+        height: 500px;
+        background-color: black;
+        border-radius: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        border: 1px solid red;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        button:hover {
+          background-color: #ff0000;
+          color: #001524;
+        }
+        button:active {
+          background-color: rgba(245, 245, 245, 0.678);
+          color: #001524;
+        }
+        .display {
+          grid-column: 1/-1;
+          grid-row: 1 / span 2;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            color: red;
+            font-size: 20px;
+          }
+        }
+        .button1 {
+          background-color: $primary-color;
+          grid-area: button1;
+          color: whitesmoke;
+          grid-column: 1;
+          grid-row: 3;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button2 {
+          background-color: $primary-color;
+          grid-area: button2;
+          color: whitesmoke;
+          grid-column: 2;
+          grid-row: 3;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button3 {
+          background-color: $primary-color;
+          grid-area: button3;
+          color: whitesmoke;
+          grid-column: 3;
+          grid-row: 3;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button4 {
+          background-color: $primary-color;
+          grid-area: button4;
+          color: whitesmoke;
+          grid-column: 4;
+          grid-row: 3;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button5 {
+          background-color: $primary-color;
+          grid-area: button5;
+          color: whitesmoke;
+          grid-column: 1;
+          grid-row: 4;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button6 {
+          background-color: $primary-color;
+          grid-area: button6;
+          color: whitesmoke;
+          grid-column: 2;
+          grid-row: 4;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button7 {
+          background-color: $primary-color;
+          grid-area: button7;
+          color: whitesmoke;
+          grid-column: 3;
+          grid-row: 4;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button8 {
+          background-color: $primary-color;
+          grid-area: button8;
+          color: whitesmoke;
+          grid-column: 4;
+          grid-row: 4;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button9 {
+          background-color: $primary-color;
+          grid-area: button9;
+          color: whitesmoke;
+          grid-column: 1;
+          grid-row: 5;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button10 {
+          background-color: $primary-color;
+          grid-area: button10;
+          color: whitesmoke;
+          grid-column: 2;
+          grid-row: 5;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button11 {
+          background-color: $primary-color;
+          grid-area: button11;
+          color: whitesmoke;
+          grid-column: 3;
+          grid-row: 5;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button12 {
+          background-color: $primary-color;
+          grid-area: button12;
+          color: whitesmoke;
+          grid-column: 4;
+          grid-row: 5;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button13 {
+          background-color: $primary-color;
+          grid-area: button13;
+          color: whitesmoke;
+          grid-column: 1;
+          grid-row: 6;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button14 {
+          background-color: $primary-color;
+          grid-area: button14;
+          color: whitesmoke;
+          grid-column: 2;
+          grid-row: 6;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button15 {
+          background-color: $primary-color;
+          grid-area: button15;
+          color: whitesmoke;
+          grid-column: 3;
+          grid-row: 6;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button16 {
+          background-color: $primary-color;
+          grid-area: button16;
+          color: whitesmoke;
+          grid-column: 4;
+          grid-row: 6;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button17 {
+          background-color: $primary-color;
+          grid-area: button17;
+          color: whitesmoke;
+          grid-column: 1 / span 2;
+          grid-row: 7;
+          border-radius: 20px;
+          height: 50px;
+          font-size: 12px;
+          border: 1px solid red;
+        }
+        .button18 {
+          background-color: $primary-color;
+          grid-area: button17;
+          color: whitesmoke;
+          grid-column: 3;
+          grid-row: 7;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+        .button19 {
+          background-color: $primary-color;
+          grid-area: button17;
+          color: whitesmoke;
+          grid-column: 4;
+          grid-row: 7;
+          width: 50px;
+          height: 50px;
+          font-size: 12px;
+          border-radius: 50%;
+          border: 1px solid red;
+        }
+      }
+    }
+  }
+}
+body {
+  background: linear-gradient(
+    270deg,
+    #3c0000,
+    #940000,
+    #ff0000,
+    #ff7e00,
+    #ffd800,
+    #b6ff00,
+    #00ffd4,
+    #0054ff,
+    #8d00ff,
+    #ff00d4
+  );
+  background-size: 2000% 2000%;
+
+  -webkit-animation: AnimationName 11s ease infinite;
+  -moz-animation: AnimationName 11s ease infinite;
+  animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.calculatorp-iphone {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .calculator-iphone {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    border: 1px solid orange;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    button:hover {
+      background-color: rgba(245, 245, 245, 0.459);
+      color: #001524;
+    }
+    button:active {
+      background-color: greenyellow;
+      color: #001524;
+    }
+
+    .display-iphone {
+      grid-column: 1/-1;
+      grid-row: 1 / span 2;
+      align-items: end;
+      justify-content: end;
+      padding-right: 20px;
+
+      p {
+        color: white;
+        font-size: 40px;
+      }
+    }
+    .button1-iphone {
+      background-color: #a5a5a5;
+      grid-area: button1;
+      color: whitesmoke;
+      grid-column: 1;
+      grid-row: 3;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button2-iphone {
+      background-color: #a5a5a5;
+      grid-area: button2;
+      color: whitesmoke;
+      grid-column: 2;
+      grid-row: 3;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button3-iphone {
+      background-color: #a5a5a5;
+      grid-area: button3;
+      color: whitesmoke;
+      grid-column: 3;
+      grid-row: 3;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button4-iphone {
+      background-color: #fe9501;
+      grid-area: button4;
+      color: whitesmoke;
+      grid-column: 4;
+      grid-row: 3;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button5-iphone {
+      background-color: black;
+      grid-area: button5;
+      color: whitesmoke;
+      grid-column: 1;
+      grid-row: 4;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button6-iphone {
+      background-color: black;
+      grid-area: button6;
+      color: whitesmoke;
+      grid-column: 2;
+      grid-row: 4;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button7-iphone {
+      background-color: black;
+      grid-area: button7;
+      color: whitesmoke;
+      grid-column: 3;
+      grid-row: 4;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button8-iphone {
+      background-color: #fe9501;
+      grid-area: button8;
+      color: whitesmoke;
+      grid-column: 4;
+      grid-row: 4;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button9-iphone {
+      background-color: black;
+      grid-area: button9;
+      color: whitesmoke;
+      grid-column: 1;
+      grid-row: 5;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button10-iphone {
+      background-color: black;
+      grid-area: button10;
+      color: whitesmoke;
+      grid-column: 2;
+      grid-row: 5;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button11-iphone {
+      background-color: black;
+      grid-area: button11;
+      color: whitesmoke;
+      grid-column: 3;
+      grid-row: 5;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button12-iphone {
+      background-color: #fe9501;
+      grid-area: button12;
+      color: whitesmoke;
+      grid-column: 4;
+      grid-row: 5;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button13-iphone {
+      background-color: black;
+      grid-area: button13;
+      color: whitesmoke;
+      grid-column: 1;
+      grid-row: 6;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button14-iphone {
+      background-color: black;
+      grid-area: button14;
+      color: whitesmoke;
+      grid-column: 2;
+      grid-row: 6;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button15-iphone {
+      background-color: black;
+      grid-area: button15;
+      color: whitesmoke;
+      grid-column: 3;
+      grid-row: 6;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button16-iphone {
+      background-color: #fe9501;
+      grid-area: button16;
+      color: whitesmoke;
+      grid-column: 4;
+      grid-row: 6;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button17-iphone {
+      background-color: black;
+      grid-area: button17;
+      color: whitesmoke;
+      grid-column: 1 / span 2;
+      grid-row: 7;
+      border-radius: 20px;
+      height: 50px;
+      font-size: 12px;
+      border: none;
+    }
+    .button18-iphone {
+      background-color: black;
+      grid-area: button17;
+      color: whitesmoke;
+      grid-column: 3;
+      grid-row: 7;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .button19-iphone {
+      background-color: #fe9501;
+      grid-area: button17;
+      color: whitesmoke;
+      grid-column: 4;
+      grid-row: 7;
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+  }
+}
+.white-background{
+    background-color: white;
+}

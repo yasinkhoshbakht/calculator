@@ -1,0 +1,587 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+body main .calculatorp {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+body main .calculatorp .calculator {
+  width: 300px;
+  height: 500px;
+  background-color: black;
+  border-radius: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  border: 1px solid red;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body main .calculatorp .calculator button:hover {
+  background-color: #ff0000;
+  color: #001524;
+}
+body main .calculatorp .calculator button:active {
+  background-color: rgba(245, 245, 245, 0.678);
+  color: #001524;
+}
+body main .calculatorp .calculator .display {
+  grid-column: 1/-1;
+  grid-row: 1/span 2;
+  align-items: center;
+  justify-content: center;
+}
+body main .calculatorp .calculator .display p {
+  color: red;
+  font-size: 20px;
+}
+body main .calculatorp .calculator .button1 {
+  background-color: #001524;
+  grid-area: button1;
+  color: whitesmoke;
+  grid-column: 1;
+  grid-row: 3;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button2 {
+  background-color: #001524;
+  grid-area: button2;
+  color: whitesmoke;
+  grid-column: 2;
+  grid-row: 3;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button3 {
+  background-color: #001524;
+  grid-area: button3;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 3;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button4 {
+  background-color: #001524;
+  grid-area: button4;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 3;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button5 {
+  background-color: #001524;
+  grid-area: button5;
+  color: whitesmoke;
+  grid-column: 1;
+  grid-row: 4;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button6 {
+  background-color: #001524;
+  grid-area: button6;
+  color: whitesmoke;
+  grid-column: 2;
+  grid-row: 4;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button7 {
+  background-color: #001524;
+  grid-area: button7;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 4;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button8 {
+  background-color: #001524;
+  grid-area: button8;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 4;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button9 {
+  background-color: #001524;
+  grid-area: button9;
+  color: whitesmoke;
+  grid-column: 1;
+  grid-row: 5;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button10 {
+  background-color: #001524;
+  grid-area: button10;
+  color: whitesmoke;
+  grid-column: 2;
+  grid-row: 5;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button11 {
+  background-color: #001524;
+  grid-area: button11;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 5;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button12 {
+  background-color: #001524;
+  grid-area: button12;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 5;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button13 {
+  background-color: #001524;
+  grid-area: button13;
+  color: whitesmoke;
+  grid-column: 1;
+  grid-row: 6;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button14 {
+  background-color: #001524;
+  grid-area: button14;
+  color: whitesmoke;
+  grid-column: 2;
+  grid-row: 6;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button15 {
+  background-color: #001524;
+  grid-area: button15;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 6;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button16 {
+  background-color: #001524;
+  grid-area: button16;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 6;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button17 {
+  background-color: #001524;
+  grid-area: button17;
+  color: whitesmoke;
+  grid-column: 1/span 2;
+  grid-row: 7;
+  border-radius: 20px;
+  height: 50px;
+  font-size: 12px;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button18 {
+  background-color: #001524;
+  grid-area: button17;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 7;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+body main .calculatorp .calculator .button19 {
+  background-color: #001524;
+  grid-area: button17;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 7;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+body {
+  background: linear-gradient(270deg, #3c0000, #940000, #ff0000, #ff7e00, #ffd800, #b6ff00, #00ffd4, #0054ff, #8d00ff, #ff00d4);
+  background-size: 2000% 2000%;
+  -webkit-animation: AnimationName 11s ease infinite;
+  -moz-animation: AnimationName 11s ease infinite;
+  animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.calculatorp-iphone {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.calculatorp-iphone .calculator-iphone {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  border: 1px solid orange;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.calculatorp-iphone .calculator-iphone button:hover {
+  background-color: rgba(245, 245, 245, 0.459);
+  color: #001524;
+}
+.calculatorp-iphone .calculator-iphone button:active {
+  background-color: greenyellow;
+  color: #001524;
+}
+.calculatorp-iphone .calculator-iphone .display-iphone {
+  grid-column: 1/-1;
+  grid-row: 1/span 2;
+  align-items: end;
+  justify-content: end;
+  padding-right: 20px;
+}
+.calculatorp-iphone .calculator-iphone .display-iphone p {
+  color: white;
+  font-size: 40px;
+}
+.calculatorp-iphone .calculator-iphone .button1-iphone {
+  background-color: #a5a5a5;
+  grid-area: button1;
+  color: whitesmoke;
+  grid-column: 1;
+  grid-row: 3;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button2-iphone {
+  background-color: #a5a5a5;
+  grid-area: button2;
+  color: whitesmoke;
+  grid-column: 2;
+  grid-row: 3;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button3-iphone {
+  background-color: #a5a5a5;
+  grid-area: button3;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 3;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button4-iphone {
+  background-color: #fe9501;
+  grid-area: button4;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 3;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button5-iphone {
+  background-color: black;
+  grid-area: button5;
+  color: whitesmoke;
+  grid-column: 1;
+  grid-row: 4;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button6-iphone {
+  background-color: black;
+  grid-area: button6;
+  color: whitesmoke;
+  grid-column: 2;
+  grid-row: 4;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button7-iphone {
+  background-color: black;
+  grid-area: button7;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 4;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button8-iphone {
+  background-color: #fe9501;
+  grid-area: button8;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 4;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button9-iphone {
+  background-color: black;
+  grid-area: button9;
+  color: whitesmoke;
+  grid-column: 1;
+  grid-row: 5;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button10-iphone {
+  background-color: black;
+  grid-area: button10;
+  color: whitesmoke;
+  grid-column: 2;
+  grid-row: 5;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button11-iphone {
+  background-color: black;
+  grid-area: button11;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 5;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button12-iphone {
+  background-color: #fe9501;
+  grid-area: button12;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 5;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button13-iphone {
+  background-color: black;
+  grid-area: button13;
+  color: whitesmoke;
+  grid-column: 1;
+  grid-row: 6;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button14-iphone {
+  background-color: black;
+  grid-area: button14;
+  color: whitesmoke;
+  grid-column: 2;
+  grid-row: 6;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button15-iphone {
+  background-color: black;
+  grid-area: button15;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 6;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button16-iphone {
+  background-color: #fe9501;
+  grid-area: button16;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 6;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button17-iphone {
+  background-color: black;
+  grid-area: button17;
+  color: whitesmoke;
+  grid-column: 1/span 2;
+  grid-row: 7;
+  border-radius: 20px;
+  height: 50px;
+  font-size: 12px;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button18-iphone {
+  background-color: black;
+  grid-area: button17;
+  color: whitesmoke;
+  grid-column: 3;
+  grid-row: 7;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+.calculatorp-iphone .calculator-iphone .button19-iphone {
+  background-color: #fe9501;
+  grid-area: button17;
+  color: whitesmoke;
+  grid-column: 4;
+  grid-row: 7;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: none;
+}
+
+.white-background {
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
